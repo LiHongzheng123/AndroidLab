@@ -60,7 +60,7 @@ public class ApplicationAdapter extends BaseAdapter {
         holder.name.setText(apps.get(position).getName());
         holder.starttime.setText("开始使用时间:"+apps.get(position).getStart_time());
         holder.endtime.setText("最后使用时间:"+apps.get(position).getEnd_time());
-        holder.alltime.setText("总使用时间:"+apps.get(position).getAll_use_time());
+        holder.alltime.setText("总使用时间:"+apps.get(position).getAll_use_time()+"秒");
         return convertView;
     }
 

@@ -80,11 +80,10 @@ public class MainActivity extends Activity {
               }
 
                 apps = loadAppInfomation(getApplicationContext());//取出来了apps和phonemsgs之后，来进行处理，获得即将进行展示的数据集，即showMsgs.
-        /*
-        **进行两个类的综合，即来进行数据处理，最后进行展示
-        * *两层循环进行展示，相当于两张表进行综合
-         */
-                //int len=phoneMsgslist.size();
+                /*
+                **进行两个类的综合，即来进行数据处理，最后进行展示
+                * *两层循环进行展示，相当于两张表进行综合
+                 */
                 int len2=apps.size();
                 Log.e("==================aaa", "长度1:"+len+"长度2"+len2);
                 Log.e("==================bbb", "长度:"+len2);
@@ -99,7 +98,6 @@ public class MainActivity extends Activity {
                             showMsgs.add(show);
                         }
                     }
-
                 mAdapter = new ApplicationAdapter(getApplicationContext(), showMsgs);
                 ls.setAdapter(mAdapter);
                 ls.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -133,7 +131,6 @@ public class MainActivity extends Activity {
         }
         return apps;
     }
-
 //    private List<PhoneMsg> LoadMsg(){
 //        List<PhoneMsg> list2=new ArrayList<>();
 //        BmobQuery<PhoneMsg> query=new BmobQuery<PhoneMsg>();
